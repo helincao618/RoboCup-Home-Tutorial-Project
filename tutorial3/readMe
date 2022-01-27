@@ -1,0 +1,40 @@
+robocup@home tutorial3
+Helin Cao
+
+--------------------------------------------------------------------
+file content:
+  -/task_1
+    -small_office_maps
+    -tutorial_office_maps
+  -/task_2
+    -CMakeLists.txt
+    -package.xml
+    -/launch
+      -navigation.launch        
+    -/src
+      -navigation_goals.cpp     
+  -/task_3
+    -CMakeLists.txt
+    -package.xml
+    -/include
+      -move_table.h       
+    -/launch
+      -move_table.launch        
+    -/src
+      -move_table.cpp   
+  
+running steps:
+1. copy the map in task_1 into ~/.pal/tiago_maps/config/
+
+2. run the cammand
+task2: roslaunch task_2 navigation.launch
+task3: roslaunch task_3 move_table.launch
+
+detalis:
+task 2: robot will start patrol A-B-C-A-B-C...
+task 3: robot will first move to C and lift the table and then start the patrol A-B-C-A-B-C...
+
+NOTE:
+if amcl localization works wrongly at the beginning, it'd better relaunch the file.
+
+

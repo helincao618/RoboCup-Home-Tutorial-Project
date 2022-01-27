@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: turtle_vis
+Description: Description of turtle_vis
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+Requires: roscpp rospy std_msgs tf tf_conversions visualization_msgs message_run

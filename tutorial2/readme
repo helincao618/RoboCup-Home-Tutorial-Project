@@ -1,0 +1,40 @@
+Readme.txt
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Exercise 1 %%%%%%%%%%%%%%%%%%%%%%%%%
+Robot: Tiago
+Packages: ics_gazebo
+Compilation:
+$ catkin_make
+Execution:
+$ roslaunch ics_gazebo tiago.launch world_suffix:=tutorial2
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Exercise 2 %%%%%%%%%%%%%%%%%%%%%%%%%
+Robot: Tiago
+Packages: ics_gazebo
+Compilation:
+$ catkin_make
+Execution:
+$ roslaunch ics_gazebo tiago.launch 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Exercise 3 %%%%%%%%%%%%%%%%%%%%%%%%%
+Robot: Tiago
+Packages: turtle_vis
+Compilation:
+$ catkin_make
+Execution:
+$ roslaunch ics_gazebo tiago.launch world_suffix:=empty
+open a new terminal
+$ roslaunch turtle_vis TurtleVis.launch
+open a new terminal
+$ rosrun turtle_vis turtle_set_position
+input the desired position
+x(enter)
+y(enter)
+and then tiago can reach that position
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Exercise 4 %%%%%%%%%%%%%%%%%%%%%%%%%
+Robot: Tiago
+Packages: controllers_tutorials
+Compilation:
+$ catkin_make
+Execution:
+$ roslaunch ics_gazebo tiago.launch world_suffix:=empty
+open a new terminal
+$ rosrun controller_manager controller_manager kill torso_controller
+$ roslaunch controllers_tutorials new_torso_controller.launch

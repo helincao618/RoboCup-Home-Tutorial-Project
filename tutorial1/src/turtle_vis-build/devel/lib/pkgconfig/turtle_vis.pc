@@ -1,0 +1,8 @@
+prefix=/home/caohelin/ros/workspaces/roboCupHome_tutorial_HELINCAO/src/turtle_vis-build/devel
+
+Name: turtle_vis
+Description: Description of turtle_vis
+Version: 0.0.0
+Cflags: -I/home/caohelin/ros/workspaces/roboCupHome_tutorial_HELINCAO/src/turtle_vis-build/devel/include -I/home/caohelin/ros/workspaces/roboCupHome_tutorial_HELINCAO/src/turtle_vis/include
+Libs: -L/home/caohelin/ros/workspaces/roboCupHome_tutorial_HELINCAO/src/turtle_vis-build/devel/lib /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+Requires: roscpp rospy std_msgs tf tf_conversions visualization_msgs message_run
